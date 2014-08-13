@@ -38,14 +38,13 @@ body {
 }
 
 a {
-	color: #555;
-	text-decoration: none;
+/*	color: #555;
+*/	text-decoration: none;
 }
 
 .timeline-wrapper {
 	width: 100%;
 	position: relative;
-	background-color: #4ABD9B;
 }
 
 .timeline-wrapper > header,

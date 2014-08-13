@@ -27,6 +27,7 @@
 
 
 .timeline {
+	margin-top: 50px;
 	position: relative;
 	list-style-type: none;
 	padding: 30px 0 50px 0;
@@ -134,12 +135,12 @@
 
 .event label.checkmark:after {
 	font-family: 'FontAwesome';
-	content: '\f198';
+	content: '\f08a';
 	background: #fff;
 	border-radius: 50%;
 	color: #3D8299;
 	/*font-size: 30px;*/
-	font-size: 36px;
+	font-size: 30px;
 	height: 100%;
 	width: 100%;
 	left: -2px;
@@ -148,6 +149,29 @@
 	position: absolute;
 	text-align: center;
 }
+
+.event input[type="radio"]:checked + label.checkmark:after {
+	content: '\f004';
+	color: #54203f;
+	box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.8);
+}
+
+.content-inner:before {
+	font-family: 'fontawesome-selected';
+	content: '\25c2';
+	font-weight: normal;
+	font-size: 54px;
+	line-height: 54px;
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	color: #3D8299;
+	left: -22px;
+	top: 19px;
+	z-index: -1;
+}
+
+
 
 .content-perspective {
 	margin-left: 230px;
@@ -217,20 +241,7 @@
 	text-align: left;
 }
 
-.content-inner:before {
-	font-family: 'fontawesome-selected';
-	content: '\25c2';
-	font-weight: normal;
-	font-size: 54px;
-	line-height: 54px;
-	position: absolute;
-	width: 30px;
-	height: 30px;
-	color: #3D8299;
-	left: -22px;
-	top: 19px;
-	z-index: -1;
-}
+
 
 /* Transitions */
 
@@ -270,18 +281,14 @@
 
 /* Checked */
 
-.event input[type="radio"]:checked + label.checkmark:after {
-	content: '\f069';
-	color: #F26328;
-	box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.8);
-}
+
 
 .event input[type="radio"]:checked ~ .content-perspective:before {
-	background: #F26328;
+	background: #54203f;
 }
 
 .event input[type="radio"]:checked ~ .content-perspective .content-inner h3 {
-	color: #F26328;
+	color: #54203f;
 }
 
 .event input[type="radio"]:checked ~ .content-perspective .content {
@@ -293,7 +300,7 @@
 }
 
 .event input[type="radio"]:checked ~ .content-perspective .content-inner {
-	border-color: #F26328;
+	border-color: #54203f;
 	box-shadow: 10px 0px 10px -6px rgba(0, 0, 0, 0.1);
 }
 
@@ -308,7 +315,7 @@
 }
 
 .event input[type="radio"]:checked ~ .content-perspective .content-inner:before {
-	color: #F26328;
+	color: #54203f;
 }
 
 .event input[type="radio"]:checked ~ label .thumbnail {
@@ -318,16 +325,16 @@
 	-ms-transform: scale(1);
 	transform: scale(1);
 	box-shadow: 
-		0 0 0 8px rgba(242,99,40,1), 
+		0 0 0 8px #54203f, 
 		0 1px 1px rgba(255,255,255,0.5);
 }
 
 .event input[type="radio"]:checked ~ label .thumbnail span {
-	color: #F26328;
+	color: #54203f;
 }
 
 .event input[type="radio"]:checked ~ label .thumbnail:before {
-	background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAPUlEQVQYV2NkQAOfUjX+882+wYgujiIAU4RNMVwhuiQ6H6wQl3XI4oy4FMHcCJPHcDS6J2A2EqUQpJhohQBbNyaHFmzEqgAAAABJRU5ErkJggg==);
+	background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAPUlEQVQYV2NkQAMhCvb/1zw4yIgujiIAU4RNMVwhuiQ6H6wQl3XI4oy4FMHcCJPHcDS6J2A2EqUQpJhohQD6ByW74iIPAgAAAABJRU5ErkJggg==);
 }
 
 .content-inner p,
@@ -418,7 +425,7 @@
 	}
 
 	.event input[type="radio"]:checked ~ .content-perspective .content-inner {
-		border-color: #F26328;
+		border-color: #54203f;
 		box-shadow: 0 10px 10px -6px rgba(0, 0, 0, 0.1);
 	}
 
@@ -525,16 +532,16 @@
 }
 
 /*Student pic Session 2*/
-.amy {
-	background-image: url(../../assets/s2/amy.jpg);
+.shane {
+	background-image: url(../../assets/s1/shane.jpg);
 }
 
-.sabra {
-	background-image: url(../../assets/s2/sabra.jpg);
+.andres {
+	background-image: url(../../assets/s2/andres.jpg);
 }
 
-.sarah {
-	background-image: url(../../assets/s2/sarah.jpg);
+.gail {
+	background-image: url(../../assets/s2/gail.jpg);
 }
 
 .kim {
@@ -566,36 +573,36 @@
 }
 
 
-.justine {
-	background-image: url(../../assets/s2/justine.gif);
+.chela {
+	background-image: url(../../assets/chela.jpg);
 }
 
-.cameron {
-	background-image: url(../../assets/s2/cameron.gif);
+.rina {
+	background-image: url(../../assets/staff/rina.jpg);
 }
 
-.leah {
-	background-image: url(../../assets/s2/leah.jpg);
+.porter {
+	background-image: url(../../assets/staff/porter.jpg);
 }
 
-.jessica {
-	background-image: url(../../assets/s2/jessica.jpg);
+.rosenbaum {
+	background-image: url(../../assets/staff/rosenbaum.jpg);
 }
 
-.mike {
-	background-image: url(../../assets/s2/mike.gif);
+.shirley_field {
+	background-image: url(../../assets/staff/shirley_fields.jpg);
 }
 
-.garrett {
-	background-image: url(../../assets/s2/garrett.jpg);
+.leba {
+	background-image: url(../../assets/staff/leba.jpg);
 }
 
-.gabe {
-	background-image: url(../../assets/s2/gabe.jpg);
+.sochat {
+	background-image: url(../../assets/staff/sochat.jpg);
 }
 
 .gardner {
-	background-image: url(../../assets/s2/gardner.gif);
+	background-image: url(../../assets/staff/);
 }
 
 .harrison {
@@ -604,30 +611,33 @@
 
 /*staff*/
 
-.aaron {
-	background-image: url(../../assets/staff/aaron.gif);
+.barbara_klein {
+	background-image: url(../../assets/staff/barbara_klein.jpg);
 }
-.alexis {
-	background-image: url(../../assets/staff/alexis.gif);
+.alejandra {
+	background-image: url(../../assets/staff/alejandra.jpg);
 }
-.elan {
-	background-image: url(../../assets/staff/elan.gif);
+.fienberg {
+	background-image: url(../../assets/staff/fienberg.jpg);
 }
-.isra {
-	background-image: url(../../assets/staff/isra.gif);
+.silvia_raum {
+	background-image: url(../../assets/staff/silvia_raum.jpg);
 }
-.jonny {
-	background-image: url(../../assets/staff/jonny.gif);
+.kneeshaw {
+	background-image: url(../../assets/staff/kneeshaw.jpg);
 }
-.mariella {
-	background-image: url(../../assets/staff/mariella.gif);
+.schwartz {
+	background-image: url(../../assets/staff/schwartz.jpg);
 }
-.rafi {
-	background-image: url(../../assets/staff/rafi.gif);
+.kramer {
+	background-image: url(../../assets/staff/kramer.jpg);
 }
-.seth {
-	background-image: url(../../assets/staff/seth.gif);
+.gutrecht {
+	background-image: url(../../assets/staff/gutrecht.jpg);
 }
-.darren {
+.susana_bruner {
 	background-image: url(../../assets/staff/darren.gif);
+}
+.sid_field {
+	background-image: url(../../assets/staff/sid_fields.jpg);
 }
