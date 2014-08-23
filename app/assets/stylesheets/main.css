@@ -14,21 +14,21 @@
 }
 
 .immediate_family {
-  background-image: url(../../assets/immediatefamily2.jpg);
+  background-image: url(../../assets/immediatekids.jpg);
   background-attachment: fixed;
   background-size: cover;
 /*  background-position-x: 100px;
 */}
 
 .friendspage {
-  background-image: url(../../assets/friend_page.jpg);
+  background-image: url(../../assets/friendspage.jpg);
   background-attachment: fixed;
   background-size: 100%;
 
 }
 
 .grandchildrenpage {
-  background-image: url(../../assets/grandchildrenpage.jpg);
+  background-image: url(../../assets/kidskids.jpg);
   background-attachment: fixed;
   background-size: 100%;
 
@@ -247,7 +247,7 @@ color: rgb(255, 255, 255);
 background-color: rgba(30, 30, 30, 0.7);
 text-align: center;
 margin-bottom: 0px;
-margin-top: 400px;
+margin-top: 300px;
 z-index: -1;
 }
 
@@ -276,7 +276,8 @@ z-index: -1;
 
 
 #index_body {
-  background-image: url(../assets/julioayo.png);
+  background-image: url(../assets/papa.JPG);
+  background-position-y: -250px;
   background-size: 100%;
 /*  background-position-x: 160px;  
 *//*  background-position-y: 50px;  
