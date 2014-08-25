@@ -23,14 +23,14 @@
 .friendspage {
   background-image: url(../../assets/friendspage.jpg);
   background-attachment: fixed;
-  background-size: 100%;
+  background-size: cover;
 
 }
 
 .grandchildrenpage {
-  background-image: url(../../assets/kidskids.jpg);
+  background-image: url(../../assets/grandchildrenevent.jpg);
   background-attachment: fixed;
-  background-size: 100%;
+  background-size: cover;
 
 }
 body {
